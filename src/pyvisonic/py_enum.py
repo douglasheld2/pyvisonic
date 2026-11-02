@@ -233,8 +233,12 @@ class EventType(IntEnum):
     QUICK_ARMED_HOME = 0x53
     QUICK_ARMED_AWAY = 0x54
     DISARM = 0x55
-
+    FAIL_TO_AUTO_ARM = 0x56             # Names for 0x56-0x5D from the Visonic HA integration's event_action table
+    EXIT_TEST_MODE = 0x58
     FORCE_ARM = 0x59
+    AUTO_ARM = 0x5A
+    INSTANT_ARM = 0x5B
+    FAIL_TO_ARM = 0x5D                  # Seen on a PowerMax Complete when the exit delay ended while the panel was not ready
     SYSTEM_RESET = 0x60
     INSTALLER_PROGRAMMING = 0x61
 
